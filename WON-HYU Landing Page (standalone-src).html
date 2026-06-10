@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WON-HYU Taekwondo Club · Mestre Tilico</title>
+<meta name="description" content="WON-HYU Taekwondo Club do Mestre Tilico. Corpo forte, mente tranquila, espírito inabalável. Agende sua aula experimental." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<template id="__bundler_thumbnail" data-bg-color="#ffffff">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#ffffff"/>
+    <circle cx="600" cy="360" r="190" fill="none" stroke="#1f5fe0" stroke-width="10"/>
+    <path d="M600 170a190 190 0 0 1 0 380 95 95 0 0 0 0-190 95 95 0 0 1 0-190Z" fill="#e0152b"/>
+    <circle cx="600" cy="265" r="34" fill="#e0152b"/>
+    <circle cx="600" cy="455" r="34" fill="#1f5fe0"/>
+    <text x="600" y="650" font-family="Forum, Georgia, serif" font-size="92" fill="#10182b" text-anchor="middle" letter-spacing="6">WON-HYU</text>
+    <text x="600" y="710" font-family="Manrope, sans-serif" font-size="30" fill="#515b71" text-anchor="middle" letter-spacing="10">TAEKWONDO CLUB</text>
+  </svg>
+</template>
+
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER FIXO
+     ============================================================ -->
+<header class="header">
+  <div class="wrap">
+    <a href="#inicio" class="brand" aria-label="WON-HYU Taekwondo Club">
+      <img class="brand-logo" src="assets/logo-wonhyo.png" alt="WON-HYO Taekwondo Club Tilico" />
+      <span class="brand-text">
+        <span class="brand-name">WON<span>-HYU</span></span>
+        <span class="brand-sub">Taekwondo Club · Mestre Tilico</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#mestre">Sobre o Mestre</a></li>
+        <li><a href="#filosofia">Filosofia</a></li>
+        <li><a href="#espaco">Espaço</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#agendar">Agendar Aula</a></li>
+      </ul>
+      <a href="#agendar" class="btn btn-primary">Aula Experimental</a>
+    </nav>
+
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Menu mobile (overlay) -->
+<div class="mobile-menu" role="dialog" aria-label="Menu de navegação">
+  <a href="#inicio">Início</a>
+  <a href="#mestre">Sobre o Mestre</a>
+  <a href="#filosofia">Filosofia</a>
+  <a href="#espaco">Espaço</a>
+  <a href="#depoimentos">Depoimentos</a>
+  <a href="#agendar">Agendar Aula</a>
+  <a href="#agendar" class="btn btn-primary">Aula Experimental</a>
+</div>
+
+<!-- ============================================================
+     1. HERO
+     ============================================================ -->
+<section class="hero" id="inicio">
+  <!-- Imagem de fundo (placeholder substituível: assets/hero.png) -->
+  <div class="hero-bg">
+    <img src="assets/hero-montanha.jpg" alt="Atleta do WON-HYU no topo da montanha, acima das nuvens" />
+  </div>
+  <!-- Partículas / luz -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <div class="wrap">
+    <div class="hero-content">
+      <span class="eyebrow hero-tag">원효 · Won-Hyu Taekwondo Club</span>
+      <h1>
+        <span class="l">Mais que uma luta,</span>
+        <span class="l">um caminho</span>
+        <span class="l">para a vida.</span>
+      </h1>
+      <p class="hero-sub">
+        Mais que uma arte marcial, o Taekwondo é uma jornada de disciplina,
+        saúde, respeito e evolução — para todas as idades.
+      </p>
+      <div class="hero-actions">
+        <a href="#agendar" class="btn btn-primary">
+          Agendar Aula Experimental
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#mestre" class="btn btn-ghost">Conhecer a Academia</a>
+      </div>
+
+      <div class="hero-values">
+        <span class="pill"><span class="dot" style="background:var(--blue-soft)"></span>Disciplina</span>
+        <span class="pill"><span class="dot" style="background:var(--red-soft)"></span>Foco</span>
+        <span class="pill"><span class="dot" style="background:var(--blue-soft)"></span>Respeito</span>
+        <span class="pill"><span class="dot" style="background:var(--red-soft)"></span>Superação</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Role</span>
+    <span class="bar"></span>
+  </div>
+</section>
+
+<!-- ============================================================
+     2. SOBRE O MESTRE TILICO
+     ============================================================ -->
+<section class="section master" id="mestre">
+  <span class="glow glow-blue"></span>
+  <span class="glow glow-red"></span>
+  <div class="wrap">
+    <div class="master-grid">
+      <!-- Foto + botão Saiba mais -->
+      <div class="master-aside reveal">
+        <div class="master-photo">
+          <img src="assets/mestre-tilico.jpg" alt="Mestre Tilico em salto de Taekwondo ao pôr do sol" class="master-img" />
+          <div class="frame-glow"></div>
+          <div class="master-badge">
+            <span class="belt" aria-hidden="true"></span>
+            <span>
+              <b>Faixa Preta</b>
+              <small>7º Grau · Dan</small>
+            </span>
+          </div>
+        </div>
+        <button class="btn btn-ghost on-light master-more" data-open-modal="mestre-modal">
+          Saiba mais sobre o Mestre
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <!-- Texto -->
+      <div class="master-text">
+        <span class="eyebrow reveal">Sobre o Mestre</span>
+        <h2 class="reveal" data-delay="1">José Palermo Junior, <span class="text-grad">o Mestre Tilico</span></h2>
+        <p class="reveal" data-delay="2">
+          Nascido em <strong>Campinas, em 5 de maio de 1963</strong>, é ex-atleta de
+          taekwondo brasileiro. Em <strong>21 de dezembro de 1987</strong>, ainda como lutador,
+          aos 24 anos, um acidente de automóvel custou-lhe 100% da visão do olho esquerdo —
+          mas, longe de afastá-lo das competições, ele transformou a deficiência em
+          motivo para aprimorar a técnica e se preparar para se tornar o
+          <strong>técnico mais vitorioso do Brasil</strong>.
+        </p>
+        <p class="reveal" data-delay="3">
+          Como treinador, é o <strong>maior campeão da história do taekwondo nacional</strong>,
+          acumulando mais de <strong>300 títulos</strong> em todas as categorias ao longo de
+          vinte anos de carreira. Reconhecido como um dos maiores reveladores de talentos
+          do país, foi o responsável direto pela preparação e descoberta dos principais
+          atletas nacionais.
+        </p>
+        <p class="reveal" data-delay="4">
+          Com seus atletas, conquistou campeonatos <strong>Mundiais</strong>,
+          <strong>Pan-Americanos</strong> e a <strong>Olimpíada de Atenas</strong>, e ainda
+          atuou como comentarista de Taekwondo no canal <strong>ESPN</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     2.5 CAMPEÃO PELO MUNDO · MAPA
+     ============================================================ -->
+<section class="section champmap" id="conquistas">
+  <span class="glow glow-blue"></span>
+  <span class="glow glow-red"></span>
+  <div class="wrap">
+    <div class="section-head champ-head reveal">
+      <span class="eyebrow">Campeão pelo Mundo</span>
+      <h2>Onde o Mestre <span class="text-grad">conquistou o mundo</span></h2>
+      <p>Cada ponto no mapa marca um lugar onde o Mestre Tilico subiu ao pódio.</p>
+    </div>
+
+    <div class="map-wrap reveal" data-delay="1">
+      <div class="champ-grid">
+        <div class="world-globe" id="world-globe">
+          <img class="globe-img" src="assets/globo.jpg" alt="Globo terrestre" />
+          <div class="map-markers" id="map-markers"></div>
+        </div>
+        <aside class="champ-panel">
+          <div class="champ-summary">
+            <span class="cs-num"><b id="champ-count">0</b></span>
+            <span class="cs-txt">conquistas internacionais<br>em <b id="champ-places">0</b> países</span>
+          </div>
+          <ul class="champ-list" id="champ-list"></ul>
+          <div class="champ-legend">
+            <span><i class="lg-dot t-gold"></i>Olimpíadas</span>
+            <span><i class="lg-dot t-red"></i>Mundial</span>
+            <span><i class="lg-dot t-blue"></i>Continental</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     3. KPIs / NÚMEROS
+     ============================================================ -->
+<section class="section kpis" style="padding-top:0;padding-bottom:0;">
+  <div class="wrap" style="padding-top:64px;padding-bottom:64px;">
+    <div class="kpi-grid">
+      <div class="kpi reveal">
+        <div class="num"><span class="pre">+</span><span data-count="300">0</span></div>
+        <div class="label">Títulos conquistados</div>
+      </div>
+      <div class="kpi reveal" data-delay="1">
+        <div class="num"><span class="pre">+</span><span data-count="20">0</span></div>
+        <div class="label">Anos de carreira</div>
+      </div>
+      <div class="kpi reveal" data-delay="2">
+        <div class="num"><span data-count="13">0</span></div>
+        <div class="label">Países com pódio</div>
+      </div>
+      <div class="kpi reveal" data-delay="3">
+        <div class="num">#1</div>
+        <div class="label">Maior campeão do Brasil</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4. FILOSOFIA, BENEFÍCIOS E HISTÓRIA
+     ============================================================ -->
+<section class="section philosophy" id="filosofia">
+  <div class="wrap">
+    <div class="section-head philo-head reveal">
+      <span class="eyebrow">Filosofia WON-HYU</span>
+      <h2>O espírito do <span class="text-grad">Taekwondo</span></h2>
+      <p>Os cinco princípios que guiam cada aluno dentro e fora do tatame.</p>
+    </div>
+  </div>
+
+  <div class="pillars reveal" data-delay="1">
+    <a class="pillar" href="#agendar" style="--bg:url('assets/valor-02-respeito.jpg')">
+      <span class="pillar-img" role="img" aria-label="Praticantes realizando reverência"></span>
+      <span class="pillar-shade"></span>
+      <span class="pillar-num">01</span>
+      <span class="pillar-top">
+        <span class="pillar-rule"></span>
+        <span class="pillar-title">Cortesia</span>
+      </span>
+      <span class="pillar-words"><b>Ye Ui · 예의</b><b>Respeito.</b><b>Gentileza.</b></span>
+    </a>
+
+    <a class="pillar" href="#agendar" style="--bg:url('assets/valor-01-disciplina.jpg')">
+      <span class="pillar-img" role="img" aria-label="Aluno em meditação"></span>
+      <span class="pillar-shade"></span>
+      <span class="pillar-num">02</span>
+      <span class="pillar-top">
+        <span class="pillar-rule"></span>
+        <span class="pillar-title">Integridade</span>
+      </span>
+      <span class="pillar-words"><b>Yom Chi · 염치</b><b>Honestidade.</b><b>Honra.</b></span>
+    </a>
+
+    <a class="pillar" href="#agendar" style="--bg:url('assets/valor-03-defesa.jpg')">
+      <span class="pillar-img" role="img" aria-label="Demonstração de técnica"></span>
+      <span class="pillar-shade"></span>
+      <span class="pillar-num">03</span>
+      <span class="pillar-top">
+        <span class="pillar-rule"></span>
+        <span class="pillar-title">Perseverança</span>
+      </span>
+      <span class="pillar-words"><b>In Nae · 인내</b><b>Paciência.</b><b>Determinação.</b></span>
+    </a>
+
+    <a class="pillar" href="#agendar" style="--bg:url('assets/valor-04-autoconfianca.jpg')">
+      <span class="pillar-img" role="img" aria-label="Faixa preta concentrado"></span>
+      <span class="pillar-shade"></span>
+      <span class="pillar-num">04</span>
+      <span class="pillar-top">
+        <span class="pillar-rule"></span>
+        <span class="pillar-title">Domínio de Si</span>
+      </span>
+      <span class="pillar-words"><b>Guk Gi · 극기</b><b>Autocontrole.</b><b>Equilíbrio.</b></span>
+    </a>
+
+    <a class="pillar" href="#agendar" style="--bg:url('assets/mestre-montanha.jpg')">
+      <span class="pillar-img" role="img" aria-label="Mestre Tilico em pose firme"></span>
+      <span class="pillar-shade"></span>
+      <span class="pillar-num">05</span>
+      <span class="pillar-top">
+        <span class="pillar-rule"></span>
+        <span class="pillar-title">Espírito Indomável</span>
+      </span>
+      <span class="pillar-words"><b>Baekjul Boolgool · 백절불굴</b><b>Coragem.</b><b>Nunca desistir.</b></span>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. EQUIPE, FAMÍLIA E ESPAÇO
+     ============================================================ -->
+<section class="section community" id="espaco">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Comunidade</span>
+      <h2>Mais que uma academia. <span class="text-grad">Uma família.</span></h2>
+      <p>Um espaço seguro, disciplinado e acolhedor, com turmas para crianças, jovens e adultos — onde cada aluno encontra o seu lugar.</p>
+    </div>
+  </div>
+
+  <!-- Carrossel em movimento contínuo (pausa ao passar o mouse) -->
+  <div class="carousel reveal" data-delay="1" aria-label="Galeria da comunidade WON-HYU">
+    <div class="carousel-track" id="community-track">
+      <figure class="cslide">
+        <img src="assets/mestre-treino-dojo.jpg" alt="Treino no dojô WON-HYU" />
+        <figcaption class="meta"><b>Espaço de Treino</b><small>Dojô amplo e profissional</small></figcaption>
+      </figure>
+      <figure class="cslide">
+        <div class="ph"><span class="ph-label">turma-infantil.jpg</span></div>
+        <figcaption class="meta"><b>Turma Infantil</b><small>Disciplina desde cedo</small></figcaption>
+      </figure>
+      <figure class="cslide">
+        <div class="ph"><span class="ph-label">equipe-professores.jpg</span></div>
+        <figcaption class="meta"><b>Equipe</b><small>Professores dedicados</small></figcaption>
+      </figure>
+      <figure class="cslide">
+        <div class="ph"><span class="ph-label">alunos-treinando.jpg</span></div>
+        <figcaption class="meta"><b>Alunos em Treino</b><small>Jovens e adultos</small></figcaption>
+      </figure>
+      <figure class="cslide">
+        <img src="assets/espaco-hall.jpg" alt="Hall de troféus e certificados do Mestre Tilico" />
+        <figcaption class="meta"><b>Hall de Troféus</b><small>Certificados, medalhas e conquistas</small></figcaption>
+      </figure>
+      <figure class="cslide">
+        <div class="ph"><span class="ph-label">turma-adulto.jpg</span></div>
+        <figcaption class="meta"><b>Turma Adulto</b><small>Técnica e condicionamento</small></figcaption>
+      </figure>
+      <figure class="cslide">
+        <div class="ph"><span class="ph-label">confraternizacao.jpg</span></div>
+        <figcaption class="meta"><b>Família WON-HYU</b><small>Espírito de equipe</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. DEPOIMENTOS
+     ============================================================ -->
+<section class="section testimonials" id="depoimentos">
+  <span class="glow glow-red"></span>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Depoimentos</span>
+      <h2>Histórias de quem <span class="text-grad">evoluiu conosco</span></h2>
+      <p>A confiança de famílias e alunos é a maior conquista do WON-HYU.</p>
+    </div>
+
+    <div class="t-grid">
+      <article class="quote reveal">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <div class="stars" aria-label="5 estrelas">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        </div>
+        <p>Meu filho ganhou mais disciplina, confiança e foco depois que começou no Taekwondo.</p>
+        <div class="who">
+          <span class="avatar">M</span>
+          <span><b>Mariana S.</b><small>Mãe de aluno · Turma Infantil</small></span>
+        </div>
+      </article>
+
+      <article class="quote reveal" data-delay="1">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <div class="stars" aria-label="5 estrelas">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        </div>
+        <p>A academia se tornou um espaço de evolução física, mental e espiritual para mim.</p>
+        <div class="who">
+          <span class="avatar">R</span>
+          <span><b>Rafael T.</b><small>Aluno adulto · Faixa Azul</small></span>
+        </div>
+      </article>
+
+      <article class="quote reveal" data-delay="2">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <div class="stars" aria-label="5 estrelas">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        </div>
+        <p>O Mestre Tilico ensina muito mais do que golpes. Ele ensina valores para a vida.</p>
+        <div class="who">
+          <span class="avatar">C</span>
+          <span><b>Carla M.</b><small>Mãe de aluna · há 4 anos</small></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7. CTA FINAL
+     ============================================================ -->
+<section class="cta" id="agendar">
+  <div class="cta-bg" aria-hidden="true">
+    <img src="assets/cta-montanha.jpg" alt="Mestre em pose de Taekwondo no topo da montanha ao nascer do sol" />
+  </div>
+  <canvas id="cta-particles" aria-hidden="true"></canvas>
+  <div class="cta-inner">
+    <span class="eyebrow cta-eyebrow reveal" style="justify-content:center;">WON-HYU Taekwondo Club</span>
+    <h2 class="cta-title reveal" data-delay="1">A evolução<br>começa <span class="text-grad">agora.</span></h2>
+    <a href="https://wa.me/5519991149917?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20no%20WON-HYU." target="_blank" rel="noopener" class="cta-wa reveal" data-delay="2">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4v-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.8 2.8 0 0 0 7 9.3a4.9 4.9 0 0 0 1 2.6 11 11 0 0 0 4.2 3.7c.6.3 1 .4 1.4.5a3.3 3.3 0 0 0 1.5.1c.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1z"/></svg>
+      <span>Agende uma aula</span>
+      <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+     8. FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#inicio" class="brand">
+          <img class="brand-logo" src="assets/logo-wonhyo.png" alt="WON-HYO Taekwondo Club Tilico" />
+          <span class="brand-text">
+            <span class="brand-name">WON<span>-HYU</span></span>
+            <span class="brand-sub">Taekwondo Club</span>
+          </span>
+        </a>
+        <p>WON-HYU Taekwondo Club — Mestre Tilico. Disciplina, respeito e evolução para todas as idades. Tradição coreana, espírito de família.</p>
+      </div>
+
+      <div>
+        <h4>NAVEGAÇÃO</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#mestre">Sobre o Mestre</a></li>
+          <li><a href="#filosofia">Filosofia</a></li>
+          <li><a href="#espaco">Espaço</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>TURMAS</h4>
+        <ul>
+          <li><a href="#agendar">Infantil</a></li>
+          <li><a href="#agendar">Juvenil</a></li>
+          <li><a href="#agendar">Adulto</a></li>
+          <li><a href="#agendar">Aula Experimental</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>CONTATO</h4>
+        <div class="contact-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Endereço da academia · [editável]</span>
+        </div>
+        <div class="contact-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2z"/></svg>
+          <span>WhatsApp · (19) 99114-9917</span>
+        </div>
+        <div class="contact-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          <span>@wonhyu.taekwondo · [editável]</span>
+        </div>
+        <div class="socials">
+          <a href="https://wa.me/5519991149917" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.5 12 5.5 12 5.5s-6 0-7.9.6A3 3 0 0 0 2 8.2 31 31 0 0 0 2 12a31 31 0 0 0 .1 3.8 3 3 0 0 0 2.1 2.1c1.9.6 7.8.6 7.8.6s6 0 7.9-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.1-3.8z"/><path d="M10 15l5-3-5-3z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> WON-HYU Taekwondo Club · Mestre Tilico. Todos os direitos reservados.</span>
+      <span>Corpo forte · Mente tranquila · Espírito inabalável</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     MODAL · SOBRE O MESTRE TILICO
+     ============================================================ -->
+<div class="modal" id="mestre-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="mestre-modal-title">
+  <div class="modal-backdrop" data-close-modal></div>
+
+  <div class="modal-card" role="document">
+    <button class="modal-close" data-close-modal aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+
+    <!-- Cabeçalho -->
+    <div class="modal-head">
+      <span class="eyebrow">Perfil do Mestre</span>
+      <h2 id="mestre-modal-title">Mestre Tilico</h2>
+      <p>José Palermo Junior — o maior campeão da história do taekwondo brasileiro: mais de 300 títulos em vinte anos de carreira.</p>
+    </div>
+
+    <div class="modal-cols">
+      <!-- ESQUERDA · Galeria de fotos (rola) -->
+      <div class="modal-left">
+        <h3 class="modal-subtitle"><span class="bar"></span>Galeria de Fotos</h3>
+        <div class="modal-gallery">
+          <figure class="mg-item mg-tall">
+            <img src="assets/mestre-trofeus.jpg" alt="Coleção de troféus e certificados do Mestre Tilico" />
+          </figure>
+          <figure class="mg-item mg-tall">
+            <img src="assets/mestre-montanha.jpg" alt="Mestre Tilico em pose de Taekwondo no topo da montanha" />
+          </figure>
+          <figure class="mg-item mg-tall">
+            <img src="assets/mestre-treino-dojo.jpg" alt="Mestre Tilico treinando com alunos no dojô WON-HYU" />
+          </figure>
+          <figure class="mg-item mg-tall">
+            <div class="ph"><span class="ph-label">mestre-competicao.jpg</span></div>
+          </figure>
+          <figure class="mg-item mg-wide">
+            <div class="ph"><span class="ph-label">mestre-podio.jpg</span></div>
+          </figure>
+        </div>
+      </div>
+
+      <!-- DIREITA · Currículo / Títulos (fixo) -->
+      <aside class="modal-right">
+        <h3 class="modal-subtitle"><span class="bar red"></span>Currículo &amp; Títulos</h3>
+
+        <div class="cv-stats">
+          <div class="cv-stat"><b class="blue">+20</b><span>Anos de carreira</span></div>
+          <div class="cv-stat"><b class="red">+300</b><span>Títulos conquistados</span></div>
+          <div class="cv-stat"><b class="blue">#1</b><span>Maior campeão do Brasil</span></div>
+        </div>
+
+        <ol class="cv-timeline">
+          <li class="cv-entry">
+            <span class="cv-year">1963</span>
+            <div class="cv-content">
+              <b>Nascido em Campinas/SP</b>
+              <p>José Palermo Junior nasce em 5 de maio de 1963, futuro Mestre Tilico.</p>
+            </div>
+          </li>
+          <li class="cv-entry">
+            <span class="cv-year">1987</span>
+            <div class="cv-content">
+              <b>A superação de um acidente</b>
+              <p>Aos 24 anos perde 100% da visão do olho esquerdo e transforma o desafio em força para aprimorar a técnica.</p>
+            </div>
+          </li>
+          <li class="cv-entry">
+            <span class="cv-year">Carreira</span>
+            <div class="cv-content">
+              <b>Maior campeão do taekwondo nacional</b>
+              <p>Mais de 300 títulos em todas as categorias ao longo de vinte anos como treinador.</p>
+            </div>
+          </li>
+          <li class="cv-entry">
+            <span class="cv-year">2004</span>
+            <div class="cv-content">
+              <b>Olimpíadas de Atenas</b>
+              <p>Conduziu seus atletas a campeonatos Mundiais, Pan-Americanos e aos Jogos Olímpicos de Atenas.</p>
+            </div>
+          </li>
+          <li class="cv-entry">
+            <span class="cv-year">ESPN</span>
+            <div class="cv-content">
+              <b>Comentarista &amp; revelador de talentos</b>
+              <p>Comentarista de Taekwondo no canal ESPN e responsável pela descoberta dos principais atletas nacionais.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="cv-cta">
+          <a href="#agendar" class="btn btn-primary" data-close-modal>
+            Treinar com o Mestre
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<!-- Botão flutuante de WhatsApp -->
+<a class="wa-float" href="https://wa.me/5519991149917?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20as%20aulas%20do%20WON-HYU." target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+  <span class="wa-pulse" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4v-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.8 2.8 0 0 0 7 9.3a4.9 4.9 0 0 0 1 2.6 11 11 0 0 0 4.2 3.7c.6.3 1 .4 1.4.5a3.3 3.3 0 0 0 1.5.1c.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1z"/></svg>
+  <span class="wa-tip">Fale conosco</span>
+</a>
+
+<script src="flags.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
