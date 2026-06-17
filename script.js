@@ -1,5 +1,5 @@
 /* ============================================================
-   WON-HYU Taekwondo Club — interações (JS puro)
+   WON-HYO Taekwondo Club — interações (JS puro)
    ============================================================ */
 (function () {
   "use strict";
